@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="YangEditor">
+  <head>
+    <meta charset="utf-8">  
+	<style>body { font-size: 1.3em; }</style>
+    <title>YANG EDITOR</title>
+  </head>
+  <body>	
+	<h1>YANG EDITOR</h1>
+    <div ng-controller="NameCalculatorController">
+    <div>
+        Your name:
+        <input type="text"
+          ng-model="name"
+          ng-keyup="displayNumeric();">
+      </div>
+      <div>Total Numeric value of person's name is: {{totalValue}}</div>
+	  <h2 class="media-heading">{{dish.name}}
+    </div>
+	
+	<!-- scripts -->
+	<script src="angular.min.js"></script>
+	<script src="app.js"></script>		
+	<script src="controllers.js"></script>	
+	<script src="services.js"></script>
+  </body>
+</html>
